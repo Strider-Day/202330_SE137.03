@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+.hide{
+    display:none;
+}
+/*
+comment
+*/
+#nav, #main, #footer{
+    border: 5px solid rgb(234, 92, 92);
+    border-radius: 10px 10px 10px 10px;
+
+}
+#nav, #footer{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(112,207,50,1) 29%, rgba(80,91,78,1) 85%);
+
+}
+#main{
+    font-family: sans-serif;
+    background-image: url(images/tennis\ corner.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+}
+
+h1{
+    color: rgb(201, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    font: size 48px;
+    color: rgb(201, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+body{
+    background-color: rgb(86, 86, 86);
+    color: rgb(254, 0, 0)
+
+}
+.pic1{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pic2{
+    width: 500px;
+    display: block;
+    margin-left: 10px;
+}
+a.guide:link, a.guide:visited{
+    color: yellow;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+    background-color: rgb(139, 9, 9);
+
+}
+a.guide:hover{
+    color:yellowgreen
+}
+a.wordtext:link, a.wordtext:visited{
+    color: yellow;
+
+
+
+
+}
+a.wordtext:hover{
+    color:yellowgreen
+}
+
