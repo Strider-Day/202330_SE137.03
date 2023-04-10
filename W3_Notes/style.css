@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* grid-template-areas:"h h h h h h"
+                        "n n s s s s"
+                        "n n s s s s"
+                        "f f f f f f"*/
+
+/* grid-area:h*/ 
+main{
+    width: 200px;
+    overflow: hidden;
+    background-color: yellowgreen;
+    color:brown;
+    padding: 50px 20px 0 10px;
+    border-width:  10px;
+    border-style: solid;
+    border-color: black;
+    margin:50px;
+    box-sizing: border-box;
+
+}
