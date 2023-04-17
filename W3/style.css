@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+
+h1{
+    color: rgba(17, 197, 13, 1);
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.item1{grid-area: self;}
+.item2{grid-area: bio;}
+.item3{grid-area: hobbies;}
+.item4{grid-area: schools;}
+.item5{grid-area: footer;}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    'self self self self self self'
+    'bio bio bio bio bio bio'
+    'bio bio bio bio bio bio'
+    'hobbies hobbies hobbies schools, schools, schools'
+    'hobbies hobbies hobbies schools, schools, schools'
+    'footer footer footer footer footer footer';
+    gap: 20px;
+    background-color: rgba(72, 110, 125, 1);
+    border: 20px solid yellow;
+    padding: 10px;
+    margin: 20px;
+
+}
+
+.pic1{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pic2{
+    width: 500px;
+    display: block;
+    margin-left: 10px;
+}
+
