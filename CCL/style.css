@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    margin: 0px;
+}
+
+#header{
+    grid-area: hd;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    padding-right: 41px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 13px;
+
+
+
+    
+    background: #070707;
+}
+h1{
+    position: absolute;
+    /*width: 478px;
+    height: 50px;
+    
+    top: 35px;*/
+    left: 30px;
+
+    font-family: 'Teko', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 69px;
+
+    color: #BB0908;
+
+    mix-blend-mode: normal;
+}
+#banner{
+    grid-area: bn;
+    height: 388px;
+    width: 1440px;
+    background-image: url(Images/BANNER.png);
+    background-repeat: no-repeat;
+}
+
+#left{
+    grid-area: lt;
+    width: 700px;
+    min-height: 481px;
+    margin-top: 25px;
+    margin-left: 20px;
+
+    border-top: 5px solid #BB0908;
+    display: flex;
+    align-items: flex-start;
+    background: #393939;
+
+
+
+}
+.pic2{
+    width: 310px;
+    height: 478px;
+}
+
+h2{
+    position: absolute;
+    width: 353px;
+    height: 77px;
+    left: 355px;
+    top: 520px;
+
+    border-bottom: 4px solid #BB0908;
+
+    font-family: 'Rock Salt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 72px;
+
+    color: #FF1D29;
+
+    mix-blend-mode: normal;
+}
+.intro{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    padding-left: 19px;
+    padding-right: 20px;
+
+    color: #ffffff;
+}
+.pic3{
+    width: 117px;
+    height: 148px;
+    align-self: baseline;
+    padding-left: 19px;
+    padding-top: 15px;
+    padding-right: 23px;
+}
+.buy{
+    align-self: baseline;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration-line: underline;
+
+    color: #22C1CB;
+}
+
+.price{
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 103.18px;
+    text-decoration-line: underline;
+
+    color:#ffffff
+}
+
+#right{
+    grid-area: rt;
+    width: 700px;
+    background: #393939;
+    margin-top: 23px;
+    min-height: 481px;
+    border-top: 5px solid #BB0908;
+}
+.pic4{
+    padding-left: 24px;
+    padding-top: 19px;
+    padding-right: 35px;
+    padding-bottom: 19px;
+}
+.killer{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #ffffff;
+    padding-left: 24px;
+    padding-bottom: 19px;
+}
+
+#far{
+    grid-area: fr;
+    width: 360px;
+    min-height: 918px;
+    background: #393939;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pic5{
+    width: 325px;
+    height: 254px;
+    padding-top: 25;
+    padding-bottom: 31;
+    align-self: center;
+}
+
+.timeline{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: rgba(255, 255, 255, 1);
+
+    padding-left: 44px;
+    padding-right: 41px;
+}
+
+.date{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FC0303;
+}
+
+.pic6{
+    width: 325px;
+    height: 170.52px;
+    padding-bottom: 28.48px;
+    padding-top: 24px;
+    align-self: center;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    grid-area: fo;
+    height: 60px;
+    background: #070707;
+
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #BCBCBC;
+    padding-left: 30px;
+    
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    'hd hd hd hd hd'
+    'bn bn bn bn fr'
+    'bn bn bn bn fr'
+    'lt lt rt rt fr'
+    'lt lt rt rt fr'
+    'fo fo fo fo fo';
+
+    background: #282828;
+    width: 1820px;
+    height: 1080px;
+    mix-blend-mode: normal;
+}
+
+.pic7{
+    width: 60px;
+    height: 60px;
+
+}
+
+.pic8{
+    width: 60px;
+    height: 60px;
+
+}
+
+.pic9{
+    width: 69px;
+    height: 69px;
+
+}
