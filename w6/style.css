@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height:100%;
+    margin:0;
+    font-family: 'Roboto';
+}
+
+
+main{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+}
+header{
+    background-color: #505050;
+    height: 23px;
+    
+}
+header p{
+    margin: 0px;
+}
+header flex1{
+    display:flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 44px;
+    width:100%;
+    color: #e3e3e3;
+    
+}
+header flex2{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 3px;
+    color: #ffffff;
+}
+
+.sicon{
+    background: url('images/sprites.png') no-repeat -433px -1px;
+	width: 12px;
+	height: 12px;
+}
+section{
+    display:flex;
+    height:100%;
+}
+
+aside{
+    width:50px;
+    background-color: #505050;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9px; 
+    gap: 16px
+  
+}
+aside flex2{
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 12px;
+    overflow: hidden;
+}
+
+.trayicon{
+    background: url('images/sprites.png') no-repeat -169px -25px;
+	width: 12px;
+	height: 12px;
+    transform: scale(1.5);
+}
+.tilesicon{
+    background: url('images/sprites.png') no-repeat -217px -2px;
+	width: 11px;
+	height: 11px;
+    transform: scale(1.5)
+}
+.trashicon{
+    background: url('images/sprites.png') no-repeat -458px 0;
+	width: 11px;
+	height: 13px;
+    transform: scale(1.5)
+}
+footer{
+    padding-left: 10px;
+    background-color: #0254A0;
+    height: 14px;
+    font-size: 10px;
+}
+#editor{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+nav{
+    background-color: #060606;
+}
+nav a{
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    width:173px;
+    height:34px;
+    background-color: #373737;
+    float:left;
+    color:#c2c2c2;
+
+    padding: 8px;
+}
+nav a flex2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.tabicon{
+    background: url('images/sprites.png') no-repeat -170px -310px;
+	width: 11px;
+	height: 12px;
+}
+.xicon{
+    background: url('images/sprites.png') no-repeat -314px -191px;
+	width: 10px;
+	height: 10px;
+}
+textarea{
+    width:100%;
+    height:100%;
+    border-width: 0;
+    resize:none;
+    outline:none;
+    background-color:black;
+    overflow-y:scroll;
+    color:white;
+    
+}
+#editor p{
+    background-color:#161616;
+    margin:0;
+    color: #c2c2c2;
+    padding-left: 10px;
+}
+
+p>a:link, p>a:active, p>a:visited{
+    color: #0058A9;
+}
+
+ #inner-tray{
+    width:200px;
+    background-color:#373737;
+    float: right;
+}
+.arrowicon{
+    cursor: url('images/sprites.png') -313px -123px;
+    color:#ffffff;
+}
+.files{
+    list-style-image: url('images/paper.png');
+    color:#e3e3e3;
+    border-top: 1px solid #7B7575;
+    padding-top: 10px;
+    border-bottom: 1px solid #7B7575;
+    padding-bottom: 24px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.stuff{
+    list-style-image: url('images/fire.png');
+    color: #e3e3e3;
+    border-top: 1px solid #7B7575;
+    padding-top: 10px;
+    border-bottom: 1px solid #7B7575;
+    padding-bottom: 24px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.tray{
+    
+    width:200px;
+    display:flex;
+    justify-content: flex-start;
+    overflow:hidden;
+    transition:all .5s;
+}
+
+.closed{
+    width:0px;
+    transition:all .5s;
+}
