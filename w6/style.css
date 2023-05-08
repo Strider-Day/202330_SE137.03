@@ -20,21 +20,28 @@ main{
 header{
     background-color: #505050;
     height: 23px;
-    
+    display: flex;
+    justify-content: space-between;
 }
 header p{
     margin: 0px;
+    
 }
-header flex1{
+header div.flex1{
     display:flex;
     align-items: center;
     gap: 15px;
     padding-left: 44px;
     width:100%;
-    color: #e3e3e3;
-    
 }
-header flex2{
+header div.flex1 p.top{
+    color: #e3e3e3;  
+}
+header div.flex1 p.top:hover, header div.flex1 p.top:active{
+
+    color: #ffffff;  
+}
+header div.flex2{
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -43,8 +50,13 @@ header flex2{
     color: #ffffff;
 }
 
-.sicon{
-    background: url('images/sprites.png') no-repeat -433px -1px;
+.sicon, .sicon:visited{
+	background: url('images/sprites.png') no-repeat -433px -1px;
+	width: 12px;
+	height: 12px;
+}
+.sicon:hover, .sicon:active{
+    background: url('images/sprites.png') no-repeat -433px -190px;
 	width: 12px;
 	height: 12px;
 }
@@ -72,20 +84,38 @@ aside flex2{
     overflow: hidden;
 }
 
-.trayicon{
+.trayicon, .trayicon:visited{
     background: url('images/sprites.png') no-repeat -169px -25px;
 	width: 12px;
 	height: 12px;
     transform: scale(1.5);
 }
-.tilesicon{
+.trayicon:hover, .trayicon:active{
+    background: url('images/sprites.png') no-repeat -169px -214px;
+	width: 12px;
+	height: 12px;
+    transform: scale(1.5);
+}
+.tilesicon, .tilesicon:visited{
     background: url('images/sprites.png') no-repeat -217px -2px;
 	width: 11px;
 	height: 11px;
     transform: scale(1.5)
 }
-.trashicon{
+.tilesicon:hover, .tilesicon:active{
+	background: url('images/sprites.png') no-repeat -217px -191px;
+	width: 11px;
+	height: 11px;
+    transform: scale(1.5)
+}
+.trashicon, .trashicon:visited{
     background: url('images/sprites.png') no-repeat -458px 0;
+	width: 11px;
+	height: 13px;
+    transform: scale(1.5)
+}
+.trashicon:hover, .trashicon:active{
+	background: url('images/sprites.png') no-repeat -458px -189px;
 	width: 11px;
 	height: 13px;
     transform: scale(1.5)
@@ -113,10 +143,14 @@ nav a{
     background-color: #373737;
     float:left;
     color:#c2c2c2;
+    text-decoration: none;
 
     padding: 8px;
 }
-nav a flex2{
+nav a:hover{
+    color:#ffffff
+}
+nav div.flex2{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -124,12 +158,22 @@ nav a flex2{
 }
 
 
-.tabicon{
+.tabicon, .tabicon:visited{
+	background: url('images/sprites.png') no-repeat -170px -121px;
+	width: 11px;
+	height: 12px;
+}
+.tabicon:hover, .tabicon:active{
     background: url('images/sprites.png') no-repeat -170px -310px;
 	width: 11px;
 	height: 12px;
 }
-.xicon{
+.xicon, .xicon:visited{
+	background: url('images/sprites.png') no-repeat -314px -2px;
+	width: 10px;
+	height: 10px;
+}
+.xicon:hover, .xicon:active{
     background: url('images/sprites.png') no-repeat -314px -191px;
 	width: 10px;
 	height: 10px;
@@ -175,6 +219,10 @@ p>a:link, p>a:active, p>a:visited{
     margin-left: 2px;
     margin-right: 2px;
 }
+.f:hover, .f:active{
+    color:#ffffff
+}
+ 
 .stuff{
     list-style-image: url('images/fire.png');
     color: #e3e3e3;

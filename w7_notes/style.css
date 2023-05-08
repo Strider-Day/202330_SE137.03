@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+body{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: stretch;
+    font-size: 16px;
+}
+
+main{
+    display: grid;
+    grid-template-areas: "h h h h"
+                         "l l r r"
+                         "f f f f";
+    height:100vh;
+    width:100vw;
+}
+header{
+    grid-area: h;
+    background-color: cyan;
+    font-size: 1.5em;
+}
+#left{
+    grid-area: l;
+    background-color: yellow;
+}
+#right{
+    grid-area: r;
+    background-color: brown;
+}
+footer{
+    grid-area: f;
+    background-color: gray;
+}
+
+@media (max-width:1500px) and (min-width:1001px)
+{
+    body{
+        background-color: red;
+    }
+}
+
+@media (max-width:1000px)
+{
+    body{
+        background-color: orange;
+    }
+    header{
+        height: 100px;
+    }
+}
+
+@media (max-width:600px)
+{
+    body{
+        background-color: green;
+    }
+    main{
+        display: grid;
+        grid-template-areas: "h h h h"
+                             "l l l l"   
+                             "r r r r"
+                             "f f f f";
+        height:100vh;
+        width:100vw;
+    }
+    header{
+        height: 50px;
+        font-size: 2em;
+    }
+}
+/*rem is relative only to the closest parent*/

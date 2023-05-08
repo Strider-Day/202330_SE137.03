@@ -21,9 +21,9 @@ function selectTab(e)
     {
         tabs[i].style.backgroundColor =`#373737`;
     }
-    e.target.style.backgroundColor=`#161616`;
+    e.currentTarget.style.backgroundColor=`#161616`;
     p.innerHTML =  `<a href=#>SE137</a> > 
                     <a href=#>W6</a> >
                     <a href=#>Homework</a> >
-                    <a href=#>Tab ${tabs.indexOf(e.target)+1}</a>`
+                    <a href=#>Tab ${tabs.indexOf(e.currentTarget)+1}</a>`
 }
